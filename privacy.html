@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy policy for the personal rclone Google Drive OAuth client.">
+  <title>Privacy Policy | Personal rclone Google Drive Connection</title>
+  <style>
+    :root{color-scheme:light;--bg:#f5f7fb;--surface:#fff;--text:#182336;--muted:#4a596d;--accent:#2257ad;--line:#dce4ef}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    main{max-width:800px;margin:65px auto;padding:36px;background:var(--surface);border:1px solid var(--line);border-radius:18px;box-shadow:0 12px 30px #2739540c}
+    .eyebrow{font-size:.8rem;font-weight:700;letter-spacing:.08em;color:var(--accent);text-transform:uppercase}h1{font-size:clamp(1.6rem,3vw,2.25rem);line-height:1.35;margin:8px 0 16px}h2{font-size:1.13rem;margin:26px 0 5px}p,li{color:var(--muted)}ul{padding-left:23px}a{color:var(--accent)}footer{border-top:1px solid var(--line);margin-top:35px;padding-top:16px;font-size:.9rem;color:var(--muted)}@media(max-width:700px){main{margin:20px 12px;padding:25px 20px}}
+  </style>
+</head>
+<body><main>
+  <div class="eyebrow">Privacy · 隱私</div>
+  <h1>隱私權政策 / Privacy Policy</h1>
+  <p>本政策適用於個人使用的 rclone Google Drive OAuth 應用程式。此應用程式使用者在自己的電腦上執行 rclone，不提供獨立的雲端後端服務。 This policy applies to a personally operated Google Drive OAuth client used with rclone on the user's own computer; no separate cloud backend is provided.</p>
+
+  <h2>1. 存取的資料 / Data accessed</h2>
+  <p>Google Drive OAuth 權限為 <code>https://www.googleapis.com/auth/drive.file</code>。rclone 可透過 Google Drive API 存取、上傳、下載、修改及刪除由此應用程式建立或獲使用者授權的檔案與資料夾；不要求完整雲端硬碟的 <code>drive</code> 權限。 The requested scope is <code>drive.file</code>. Via Google Drive API, rclone may list, upload, download, edit, and delete files or folders created by the application or specifically authorized by the user. It does not request full-Drive <code>drive</code> access.</p>
+
+  <h2>2. 使用目的 / Use of data</h2>
+  <p>資料僅用於使用者主動執行的雲端備份、檔案管理與同步作業。此靜態網站不會透過 OAuth 取得或處理 Google Drive 檔案。 Data is used solely for user-directed backup, file management, and synchronization. This static website does not obtain Google Drive files via OAuth.</p>
+
+  <h2>3. 儲存與安全 / Storage and security</h2>
+  <p>OAuth 憑證與更新權杖由本機 rclone 設定檔管理，可能包含可存取 Google Drive 的機密資訊。使用者應保護作業系統帳號及設定檔，不應將憑證提交至公開儲存庫。Google Drive 內容仍由 Google 儲存。 OAuth credentials and refresh tokens are managed in the local rclone configuration and must be protected. They should never be committed to a public repository. Google Drive content remains stored by Google.</p>
+
+  <h2>4. 分享與第三方 / Disclosure and third parties</h2>
+  <p>本 OAuth 整合不會販售使用者資料，也不會自行將 Drive 檔案傳送至額外的營運伺服器。執行雲端檔案操作需要與 Google Drive API 通訊。此說明網站由 GitHub Pages 託管；GitHub 可能依其政策處理網頁存取紀錄。 This integration does not sell user data or independently transmit Drive content to an additional operator-run server. Drive operations communicate with Google's API. This page is hosted on GitHub Pages, which may process website access logs under its own policies.</p>
+
+  <h2>5. 保留與撤銷 / Retention and revocation</h2>
+  <p>檔案保留期間由使用者在 Google Drive 的操作決定。使用者可隨時在 <a href="https://myaccount.google.com/connections">Google 帳號的第三方連線管理頁</a> 撤銷應用程式授權；撤銷後，本機既存的設定檔仍需自行妥善保護或移除。 File retention is controlled by the user's own Drive operations. Access can be revoked at <a href="https://myaccount.google.com/connections">Google Account third-party connections</a>. Local configuration copies remain the user's responsibility.</p>
+
+  <h2>6. 政策更新 / Changes</h2>
+  <p>若存取範圍或使用方式改變，將更新本頁政策。 This policy will be updated if access scopes or data practices change.</p>
+  <p><a href="index.html">← 返回首頁 / Back to home</a> · <a href="terms.html">使用說明 / Terms</a></p>
+  <footer>Last updated / 最後更新：2026-10-19 · Independent personal integration, not affiliated with Google or the rclone project.</footer>
+</main></body>
+</html>
