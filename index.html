@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal Google Drive connection using rclone and a dedicated OAuth client. 個人 rclone Google Drive OAuth 用途與權限說明。">
+  <title>Personal rclone Google Drive Connection</title>
+  <style>
+    :root{color-scheme:light;--bg:#f5f7fb;--surface:#fff;--text:#182336;--muted:#4a596d;--accent:#2257ad;--line:#dce4ef}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    main{max-width:800px;margin:65px auto;padding:36px;background:var(--surface);border:1px solid var(--line);border-radius:18px;box-shadow:0 12px 30px #2739540c}
+    .eyebrow{font-size:.8rem;font-weight:700;letter-spacing:.08em;color:var(--accent);text-transform:uppercase}h1{font-size:clamp(1.6rem,3vw,2.25rem);line-height:1.35;margin:8px 0 16px}h2{font-size:1.1rem;margin:28px 0 8px}p,li{color:var(--muted)}ul{padding-left:23px}
+    a{color:var(--accent)}.links{display:flex;gap:18px;flex-wrap:wrap;margin:25px 0 5px}.links a{font-weight:650}.note{padding:15px 18px;background:#eef4ff;border-radius:12px;border:1px solid #d6e5ff}
+    footer{border-top:1px solid var(--line);margin-top:35px;padding-top:16px;font-size:.9rem;color:var(--muted)}
+    @media(max-width:700px){main{margin:20px 12px;padding:25px 20px}}
+  </style>
+</head>
+<body>
+  <main>
+    <div class="eyebrow">Personal OAuth application · 個人用途</div>
+    <h1>Personal rclone Google Drive Connection</h1>
+    <p>這是供個人電腦上的 <a href="https://rclone.org/">rclone</a> 命令列程式連接 Google Drive 使用的獨立 OAuth 設定說明頁。此專案沒有對外開放的網頁檔案管理服務。</p>
+    <p>This page describes a personal OAuth client used by the <a href="https://rclone.org/">rclone</a> command-line program to access Google Drive from a local computer. It does not operate a public file-management service.</p>
+
+    <h2>用途與功能 / Purpose</h2>
+    <ul>
+      <li>使用者透過 Google OAuth 授權，讓本機 rclone 在 Google Drive 中建立及管理備份檔案與資料夾。 / The user authorizes local rclone to create and manage backup files and folders in Google Drive.</li>
+      <li>應用程式要求 <code>https://www.googleapis.com/auth/drive.file</code> 權限，主要用於存取由此 OAuth 應用程式建立或經使用者明確授權的檔案。 / The application requests the <code>drive.file</code> scope for files it creates or that the user explicitly authorizes.</li>
+      <li>Google Drive 的資料存取與操作由使用者在自己的電腦上執行；此靜態網站不讀取 Google Drive 檔案。 / Google Drive operations are performed locally; this static website does not read Drive files.</li>
+    </ul>
+
+    <div class="note">本網站只提供 OAuth 應用程式的公開說明與政策資訊，不需要你在此輸入 Google 密碼、Client Secret 或 OAuth Token。 This website does not request Google passwords, client secrets, or OAuth tokens.</div>
+
+    <div class="links">
+      <a href="privacy.html">隱私權政策 / Privacy Policy</a>
+      <a href="terms.html">使用說明 / Terms</a>
+    </div>
+    <footer>Independent personal integration. Not an official Google or rclone website. · 最後更新 / Last updated: 2026-10-19</footer>
+  </main>
+</body>
+</html>
